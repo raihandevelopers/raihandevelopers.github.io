@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+  </style>
+  <meta charset="utf-8">
+  <title>Contactless Heart Rate</title>
+  <link rel="icon" type="image/x-icon" href="final.jpg">
+</head>
+<body style="background-color:#0E1117;">
+  <h1 style="font-family:verdana;">Contactless Heart Rate Measurement
+    <footer> Copyright &copy; 2022 Raihan Khan</footer>
+  </h1>
+  </br>
+  <p style="font-family:Montserrat;">Non contact Heart rate Measurement is for patients with cardio-vascular diseases. We tested the feasibility of the use of regular web camera for Heart rate Measurement. The Eulerian Video Magnification was used for processing of acquired video sequences. The results were compared with the pulse rate determined from the electrocardiography signals, recorded from the two electrodes positioned at left side of the chest. We present pulse rate results obtained from both methods recorded from two healthy volunteers. The comparison shows that the Eulerian Video Magnification differs from the electrocardiography for less than 5% at normal pulse rate. The results show that for heart rates that correspond to cardio-vascular diseases (tachicardia, bradicardia), the algorithm needs further modifications so this is just for test purpose not for Clinical use. For best results, try in a constantly well lit space with minimal device and subject motion.</p>
+
+  </br>
+  
+  <div>
+    <video hidden id="webcam" width="640" height="480"></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
